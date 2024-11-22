@@ -1,0 +1,52 @@
+.bottom-nav {
+  background: var(--bg-light);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0; /* Mengurangi padding */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk tampilan elegan */
+}
+
+.nav-link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.8rem; /* Ukuran teks lebih kecil */
+  transition: color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.nav-link:hover {
+  color: var(--blue); /* Warna biru saat hover */
+}
+
+.icon {
+  font-size: 1.2rem; /* Ukuran ikon lebih kecil */
+  transition: transform 0.3s ease; /* Animasi untuk ikon */
+}
+
+.nav-link:hover .icon {
+  transform: scale(1.2); /* Ikon membesar saat hover */
+}
+
+.nav-link span {
+  font-size: 0.7rem; /* Ukuran teks label lebih kecil */
+  margin-top: 0.3rem; /* Mengurangi jarak antara ikon dan label */
+}
+
+.nav-link.active {
+  color: var(--blue); /* Warna berbeda untuk tautan aktif */
+}
+
+.nav-link.active .icon {
+  font-weight: bold; /* Membuat ikon tebal untuk tautan aktif */
+}
+
+.nav-link.active span {
+  font-weight: bold; /* Membuat teks label tebal untuk tautan aktif */
+}

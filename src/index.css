@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --bg-dark: #121269;
+  --bg-light: #c6c12df7;
+  --blue: #350e0e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+.link {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.active {
+  color: var(--blue);
+}
+
+.home,
+.hero,
+.role,
+.about {
+  height: 100vh;
+  background: var(--bg-dark);
+  padding: 1rem;
+  overflow: auto;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+  background-image: url('/public/images/ls.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+.home h1,
+.home h2,
+.home p {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero h1,
+.role h1 {
+  text-align: center;
+}
+
+.home h2 {
+  margin-bottom: 2rem; 
+}
+
+.home p {
+  color: rgb(200, 200, 200);
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+.hero p,
+.role p,
+.about p {
+  color: rgb(167, 216, 239);
+}
+
+.hero-container,
+.role-container,
+.role-heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem 5rem;
+  gap: 1rem;
+  text-align: center;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.hero-container div,
+.role-container div,
+.role-heroes div {
+  border: 1px solid var(--bg-light);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.hero-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem 5rem;
+  gap: 1rem;
+  text-align: center;
+  max-width: 425px;
+  margin: 0 auto;
+  color: white;
+}
+
+.hero-image {
+  width: 250px; 
+  height: auto; 
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.role-desc {
+  max-width: 768px;
+  margin: 1rem auto;
+  text-align: justify;
+}
+
+.role-heroes h2 {
+  width: 100px;
+}
+
+.about h2 {
+  margin-top: 1rem;
+}
+
+.about img {
+  width: 250px;
+  align-self: center;
+}
+
+.about-app,
+.about-me {
+  max-width: 540px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-me p {
+  align-self: center;
+}

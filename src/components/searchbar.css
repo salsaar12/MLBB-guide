@@ -1,0 +1,33 @@
+/* SearchBar.css */
+
+h1 {
+  margin-bottom: 20px; /* Memberikan jarak bawah pada judul */
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #c6c12df7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #989525f7;
+}
